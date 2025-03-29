@@ -56,10 +56,12 @@
 // optimized
 function longestConsecutiveOptimized(nums) {
   // debugger
+  // Step 1: Put all numbers in a Set for O(1) lookups
   const numSet = new Set(nums)
   console.log(numSet)
   let longest = 0
 
+  // Step 2: Only check starting points of sequences
   for (let num of numSet) {
     // Only start counting if it's the start of a sequence
     if (!numSet.has(num - 1)) {
