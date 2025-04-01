@@ -105,5 +105,5 @@ return Array.from(result).map((str) => str.split(',').map(Number)) // Convert Se
 // ['1,2,3,4', '2,3,4,5', '1,1,1,1'].split(",")
 // [Array(4), Array(4), Array(4)]
 
-// x=Array.from(['1,2,3,4','2,3,4,5','1,1,1,1'])
-// y=x.map((str)=>str.split(",").map(Number))
+x = Array.from(['1,2,3,4', '2,3,4,5', '1,1,1,1'])
+y = x.map((str) => str.split(',').map(Number))
